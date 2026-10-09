@@ -46,7 +46,10 @@ README.md                   # This file
 ## Sample Output
 
 ```
-(Paste a sample run of the program here, e.g. the main menu or a frame from an animation)
+<img width="262" height="140" alt="Screenshot 2026-09-30 093926" src="https://github.com/user-attachments/assets/4afacbf0-ed9c-4397-91bd-0a0613651683" />
+<img width="221" height="140" alt="Screenshot 2026-09-30 093857" src="https://github.com/user-attachments/assets/b50268ec-2fd3-4c9a-8645-3f32d4934ca2" />
+
+
 ```
 
 ## Tech Stack
@@ -56,7 +59,7 @@ README.md                   # This file
 
 ## Author
 
-Add your name here.
+Dhanvantari Saini 
 
 ## Course Info
 
