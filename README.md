@@ -31,25 +31,39 @@ A menu-driven, terminal-based animation player written in pure Python. It create
 ## How to Run
 
 ```bash
-python ascii_animation_player.py
+python main.py
 ```
 
 Then pick an option from the menu (1-12), or enter `0` to quit. Press `Ctrl+C` at any time during an animation to return to the menu.
 
+## Instructions for Testing
+
+A small unit test suite covers the menu input-validation logic (`parse_choice` in `main.py`):
+
+```bash
+python -m unittest test_validation.py -v
+```
+
+These tests also run fine with `pytest` if you have it installed.
+
 ## Project Structure
 
 ```
-ascii_animation_player.py   # Main program: menu loop + all animation functions
-README.md                   # This file
+main.py                 # Entry point: menu loop, input validation, dispatch
+renderer.py              # Shared screen helpers (clear_screen, render_frame, wait_for_enter, run_animation)
+animations_basic.py      # Blinking Eyes, Swimming Fish, Grass in the Wind
+animations_motion.py     # Bouncing Ball, Loading Spinner, Bouncing Text
+animations_random.py     # Rain Falling, Fireworks, Starfield
+animations_misc.py       # Ticking Clock, Countdown Timer, Candle Flame
+test_validation.py       # Unit tests for input validation
+README.md                # This file
+statement.md             # Problem statement, scope, target users, features
 ```
 
 ## Sample Output
 
 ```
-<img width="262" height="140" alt="Screenshot 2026-09-30 093926" src="https://github.com/user-attachments/assets/4afacbf0-ed9c-4397-91bd-0a0613651683" />
-<img width="221" height="140" alt="Screenshot 2026-09-30 093857" src="https://github.com/user-attachments/assets/b50268ec-2fd3-4c9a-8645-3f32d4934ca2" />
-
-
+(Paste a sample run of the program here, e.g. the main menu or a frame from an animation)
 ```
 
 ## Tech Stack
@@ -59,7 +73,7 @@ README.md                   # This file
 
 ## Author
 
-Dhanvantari Saini 
+Dhanvantari Saini
 
 ## Course Info
 
@@ -69,4 +83,3 @@ Faculty: Dr. Siddharth Singh Chouhan
 ## License
 
 This project is for educational purposes.
-
