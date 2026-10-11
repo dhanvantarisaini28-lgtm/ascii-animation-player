@@ -1,0 +1,36 @@
+# Project Statement — ASCII Art Animation Player
+
+## Problem Statement
+
+Most beginner programming exercises are short and disconnected, which makes it hard to practice combining control flow, data structures, and user interaction in one place. There is a need for a single, self-contained program that reinforces fundamental concepts — input validation, loop control, and the use of lists and dictionaries to store structured data — while producing something visual and enjoyable to interact with. The program must also run on any standard computer without installing extra graphics libraries, so it needs to work using only text output in a terminal.
+
+## Scope of the Project
+
+The project covers the design and implementation of a Python console application containing a main menu loop and twelve independent animation functions, organized into separate modules. It is limited to text-based rendering inside a terminal window of roughly 80 columns by 24 rows and does not include sound, color libraries, or any graphical windowing system. The scope includes basic input validation, graceful handling of keyboard interrupts (Ctrl+C), and clearly commented code. It does **not** extend to networked features, saving/loading animation state, or a graphical user interface — these are noted as possible future enhancements.
+
+## Target Users
+
+- Beginner programming students learning loops, functions, and basic data structures.
+- Anyone who wants a lightweight, dependency-free terminal screensaver or demo.
+- Instructors looking for a compact example that touches many core Python concepts.
+
+## High-Level Features
+
+- A numbered main menu listing all 12 animations plus a Quit option.
+- Input validation that rejects non-numeric or out-of-range choices without crashing.
+- Twelve self-contained animations, including:
+  - Blinking Eyes
+  - Swimming Fish
+  - Grass Moving in the Wind (procedural, uses `random`)
+  - Bouncing Ball
+  - Loading Spinner
+  - Ticking Clock
+  - Rain Falling
+  - Fireworks
+  - Bouncing Text (DVD-style)
+  - Countdown Timer
+  - Starfield / Warp Speed
+  - Flickering Candle Flame
+- A shared rendering engine (`clear_screen()` + `render_frame()`) used by every animation, so the clear-print-sleep logic exists in only one place.
+- Graceful Ctrl+C handling that returns to the main menu instead of closing the program.
+- Automatic return to the main menu once an animation finishes, so the user can keep exploring without restarting the program.
