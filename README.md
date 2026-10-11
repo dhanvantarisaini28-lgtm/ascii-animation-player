@@ -63,7 +63,12 @@ statement.md             # Problem statement, scope, target users, features
 ## Sample Output
 
 ```
-(Paste a sample run of the program here, e.g. the main menu or a frame from an animation)
+        SWIMMING FISH
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+               ><(((('>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 ```
 
 ## Tech Stack
